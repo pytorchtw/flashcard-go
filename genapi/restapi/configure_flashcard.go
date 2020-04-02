@@ -124,7 +124,7 @@ func setupGlobalMiddleware(handler http.Handler) http.Handler {
 	*/
 	c := cors.New(cors.Options{
 		AllowedHeaders: []string{"Origin", "X-Requested-With", "Content-Type", "Accept", "Authorization"},
-		AllowedOrigins: []string{"http://flashcardgo:8082"},
+		AllowedOrigins: []string{"http://flashcardgo.com:8082"},
 		//AllowedMethods:   []string{"GET", "POST", "PUT", "OPTION", "DELETE"},
 		AllowedMethods:   []string{"POST"},
 		AllowCredentials: true,
